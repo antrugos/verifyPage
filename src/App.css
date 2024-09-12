@@ -3,40 +3,60 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.checkForm{
+  border: 5px dashed #BDEDFF;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 40px;
+  border-radius: 12px;
+  width:20vw;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+  font-weight: bold;
+  font-size: 24px;
+  color: #668e9d;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.containerMessage {
+  background-color: #d8d8d8;
 }
 
-.card {
-  padding: 2em;
+.inputAge {
+  display: flex;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
 }
 
-.read-the-docs {
-  color: #888;
+.listCheck {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 8px;
+  border: 1px solid aqua;
+  text-align: center;
+  padding: 4px;
+  margin: 2px 0px;
+}
+
+.listCheck li {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px;
+}
+
+.item {
+  margin: 0px;
+  padding:5px 0px;
+  text-align: justify;
+  padding-left: 10px;
 }
